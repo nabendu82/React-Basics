@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
-import ErrorBoundary from './components/ErrorBoundary';
-import Villain from './components/Villain';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <Villain villainName="Joker" />
-        <Villain villainName="Riddler" />
-        <Villain villainName="Batman" />
-      </ErrorBoundary>
+      <ClickCounter name="Nabendu" />
+      <HoverCounter />
     </div>
   );
 }
